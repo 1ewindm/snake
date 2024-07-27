@@ -68,7 +68,7 @@ class Snake:
             label.config(text=f"Score{score}")
             food.recreate()
         self.fix_overflow()
-        self.window.after(250, self.move, food)
+        self.window.after(251, self.move, food)
 
     def fix_overflow(self):
         for part in self.body:
